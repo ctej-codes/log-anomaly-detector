@@ -53,14 +53,14 @@ model = IsolationForest(
 )
 
 # Predict anomalies using log severity and message length
-df["anomaly"] = model.fit_predict(
+df["anomaly_value"] = model.fit_predict(
     df[["level_mapping", "message_length"]]
 )
 
 # Convert model predictions into user-friendly labels
 labels = []
 
-for value in df["anomaly"]:
+for value in df["anomaly_value"]:
     if value == -1:
         labels.append("❌ Anomaly")
     else:
