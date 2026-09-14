@@ -158,7 +158,7 @@ python aiops_log_analysis.py
 
 # Sample Output
 
-<img width="1493" height="329" alt="image" src="https://github.com/user-attachments/assets/2e11e590-cd49-4240-a6fc-aa18d0f18b82" />
+<img width="1559" height="334" alt="image" src="https://github.com/user-attachments/assets/189a853a-b3e5-4194-8647-29dcac1e55b6" />
 
 
 > **Note:** The Isolation Forest model identifies anomalies based on the selected features (log severity level and message length). An anomaly label does not necessarily indicate a system failure or security incident. Rather, it highlights log entries that differ significantly from the majority of records according to the model.
